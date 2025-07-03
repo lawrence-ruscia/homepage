@@ -1,6 +1,44 @@
+/* Fonts */
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('../fonts/MonaSans-Medium.woff2');
+}
+
+/* Global Styles */
 button,
 [type='button'],
 [type='submit'],
 [type='reset'] {
   cursor: pointer;
 }
+
+/* Root Variables */
+:root {
+  /* Brand */
+  --color-brand-primary: #1f6feb;
+
+  /* Text */
+  --color-text-primary: hsl(0 0% 95%);
+  --color-text-muted: hsl(0 0% 70%);
+
+  /* Backgrounds */
+  --color-bg-primary: #0d1117;
+}
+
+/* Global Element Styling */
+body {
+  font-family: 'Mona Sans', sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-muted);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text-primary);
+}
+
+/* Layout Styling */
