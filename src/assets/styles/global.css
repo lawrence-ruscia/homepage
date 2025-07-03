@@ -15,23 +15,33 @@ button,
 /* Root Variables */
 :root {
   /* Brand */
-  --color-brand-primary: #1f6feb;
+  --color-brand-primary: hsl(216, 84%, 52%);
+  --color-brand-light: hsla(216, 84%, 52%, 0.4);
 
   /* Text */
   --color-text-primary: hsl(0 0% 95%);
   --color-text-muted: hsl(0 0% 70%);
 
   /* Backgrounds */
-  --color-bg-primary: #0d1117;
+  --color-bg-primary: hsl(0, 0%, 5%);
+
+  /* Spacing */
+  --space-0: 0rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-8: 3rem;
+
+  /* Font Size */
+  --font-size-0: 1rem;
+  --font-size-1: 1.125rem;
+  --font-size-2: 1.25rem;
 }
 
 /* Global Element Styling */
-body {
-  font-family: 'Mona Sans', sans-serif;
-  background-color: var(--color-bg-primary);
-  color: var(--color-text-muted);
-}
-
 h1,
 h2,
 h3,
@@ -41,4 +51,56 @@ h6 {
   color: var(--color-text-primary);
 }
 
+h1,
+h2 {
+  line-height: 1.4;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Mona Sans', sans-serif;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-muted);
+
+  font-size: 1rem;
+
+  line-height: 1.7;
+}
+
 /* Layout Styling */
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: var(--space-3);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2 {
+    line-height: 1.25;
+  }
+
+  #main {
+    padding: var(--space-5);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  body {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  #main {
+    padding: var(--space-8);
+  }
+}
