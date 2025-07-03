@@ -1,8 +1,8 @@
 import { Menu } from 'lucide-react';
-export const HeaderNav = () => {
+export const HeaderNav = ({ className }) => {
   return (
-    <button>
-      <Menu />  
+    <button className={className}>
+      <Menu width='1.75rem' height='auto' />
     </button>
   );
 };

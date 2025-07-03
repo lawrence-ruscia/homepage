@@ -4,6 +4,11 @@
   src: url('../fonts/MonaSans-Medium.woff2');
 }
 
+@font-face {
+  font-family: 'Monaspace Neon';
+  src: url('../fonts/MonaspaceNeon-Regular.woff2');
+}
+
 /* Global Styles */
 button,
 [type='button'],
@@ -17,6 +22,7 @@ button,
   /* Brand */
   --color-brand-primary: hsl(216, 84%, 52%);
   --color-brand-light: hsla(216, 84%, 52%, 0.4);
+  --color-brand-separator: hsla(216, 84%, 52%, 0.2);
 
   /* Text */
   --color-text-primary: hsl(0 0% 95%);
