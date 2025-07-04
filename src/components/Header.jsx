@@ -1,12 +1,27 @@
 import { Logo } from './Logo';
 import { HeaderNav } from './HeaderNav';
+import { useState } from 'react';
 import styles from '../assets/styles/Header.module.css';
 
 export const Header = () => {
+  const handleNavBtnClick = () => {
+    const navMenu = document.querySelector('#navMenu');
+    navMenu.style.transform = 'translateX(0)';
+
+    const overlay = document.querySelector('#overlay');
+    overlay.style.display = 'block';
+
+    console.log('Clicked!');
+  };
+
   return (
     <header className={styles.header}>
       <Logo className={styles.logo} iconStyles={styles.icon} />
-      <HeaderNav className={styles.nav} />
+      <HeaderNav
+        isMobile='true'
+        className={styles.nav}
+        handleNavBtnClick={handleNavBtnClick}
+      />
     </header>
   );
 };

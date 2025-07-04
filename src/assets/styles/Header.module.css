@@ -36,6 +36,10 @@
   color: var(--color-brand-primary);
 }
 
+.nav-link > a {
+  color: inherit;
+}
+
 @keyframes blink {
   from {
     opacity: 0;
