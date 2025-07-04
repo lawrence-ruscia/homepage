@@ -32,8 +32,12 @@
 
   font-size: var(--font-size-0);
   text-decoration: none;
-  color: var(--color-text-primary);
-  background-color: var(--color-brand-primary);
+
+  color: var(--color-cta);
+  background-color: var(--color-cta-bg);
+  border: 1px solid var(--color-cta-border);
+
+  transition: background-color 200ms ease-in-out;
 }
 
 .avatar {
@@ -77,6 +81,10 @@ img {
     align-items: start;
   }
 
+  .cta:hover {
+    background-color: var(--color-cta-bg-hover);
+  }
+
   .avatar {
     display: block;
   }
@@ -85,13 +93,13 @@ img {
     border: 1px solid var(--color-brand-light);
     border-radius: 10px;
 
-    --shadow-color: 216 84% 52%;
+    --shadow-color: 142 71% 45%;
     box-shadow: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.36),
       0.8px 1.6px 2px -0.8px hsl(var(--shadow-color) / 0.36),
       2.1px 4.1px 5.2px -1.7px hsl(var(--shadow-color) / 0.36),
       5px 10px 12.6px -2.5px hsl(var(--shadow-color) / 0.36);
 
-    transition: border-color 250ms;
+    transition: border-color 200ms ease-in-out;
   }
 
   .avatar::before {
@@ -109,7 +117,7 @@ img {
   .avatar::after {
     color: var(--color-brand-primary);
     opacity: 0.3;
-    transition: opacity 250ms;
+    transition: opacity 200ms ease-in-out;
   }
 
   .avatar:hover > img {
@@ -132,7 +140,7 @@ img {
     content: '// Hello, World!';
     color: var(--color-brand-primary);
     opacity: 0.3;
-    transition: opacity 250ms;
+    transition: opacity 200ms ease-in-out;
   }
 
   .header:hover::before {

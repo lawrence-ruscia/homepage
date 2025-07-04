@@ -20,16 +20,16 @@ button,
 /* Root Variables */
 :root {
   /* Brand */
-  --color-brand-primary: hsl(216, 84%, 52%);
-  --color-brand-light: hsla(216, 84%, 52%, 0.4);
-  --color-brand-separator: hsla(216, 84%, 52%, 0.2);
+  --color-brand-primary: hsl(142, 71%, 45%);
+  --color-brand-light: hsla(142, 71%, 45%, 0.4);
+  --color-brand-separator: hsla(142, 71%, 45%, 0.142);
 
   /* Text */
   --color-text-primary: hsl(0 0% 95%);
   --color-text-muted: hsl(0 0% 70%);
 
   /* Backgrounds */
-  --color-bg-primary: hsl(0, 0%, 5%);
+  --color-bg-primary: hsl(180, 4%, 5%);
 
   /* Spacing */
   --space-0: 0rem;
@@ -45,6 +45,12 @@ button,
   --font-size-0: 1rem;
   --font-size-1: 1.125rem;
   --font-size-2: 1.25rem;
+
+  /* Button */
+  --color-cta: var(--color-brand-primary);
+  --color-cta-border: hsla(142, 71%, 45%, 0.268);
+  --color-cta-bg: hsla(142, 71%, 45%, 0.15);
+  --color-cta-bg-hover: hsla(142, 71%, 45%, 0.25);
 }
 
 /* Global Element Styling */
