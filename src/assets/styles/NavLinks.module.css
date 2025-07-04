@@ -7,7 +7,7 @@
   transform: translateX(9999px);
   transition: transform 250ms ease-in-out;
 
-  width: 75vw;
+  width: 50%;
   min-height: 100vh;
 
   background-color: var(--color-bg-primary);
