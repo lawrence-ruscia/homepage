@@ -11,6 +11,10 @@
   list-style-type: none;
 }
 
+.navLink:has(> a) {
+  border-bottom: 1px solid transparent;
+}
+
 .navLink > a,
 .resume {
   display: flex;
@@ -50,7 +54,7 @@
 
   .navLink:has(> a):hover {
     color: var(--color-brand-primary);
-    border-bottom: 1px solid var(--color-brand-primary);
+    border-bottom-color: var(--color-brand-primary);
   }
 }
 
