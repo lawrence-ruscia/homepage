@@ -42,7 +42,7 @@ export const About = () => {
 
   return (
     <section id='about' className={styles.about}>
-      <h1 className={`${styles.title} section-title`}>About Me</h1>
+      <h2 className={`${styles.title} section-title`}>About Me</h2>
       <div className={styles.content}>
         {isMobile ? (
           mobileScreenText
