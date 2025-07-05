@@ -7,12 +7,6 @@ export const NavList = () => {
   return (
     <ul className={styles.navList}>
       <li className={styles.navLink}>
-        <a href='#projects'>
-          <FolderCode className={styles.navIcon} />
-          Projects
-        </a>
-      </li>
-      <li className={styles.navLink}>
         <a href='#about'>
           <User className={styles.navIcon} />
           About
@@ -22,6 +16,12 @@ export const NavList = () => {
         <a href='#skills'>
           <Wrench className={styles.navIcon} />
           Skills
+        </a>
+      </li>
+      <li className={styles.navLink}>
+        <a href='#projects'>
+          <FolderCode className={styles.navIcon} />
+          Projects
         </a>
       </li>
       <li className={styles.navLink}>
