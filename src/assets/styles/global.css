@@ -40,6 +40,7 @@ button,
   --space-5: 1.5rem;
   --space-6: 2rem;
   --space-8: 3rem;
+  --space-section: clamp(6rem, 10vw, 8rem);
 
   /* Font Size */
   --font-size-0: 1rem;
