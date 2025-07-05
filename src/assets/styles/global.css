@@ -89,6 +89,20 @@ h2 {
   gap: var(--space-2);
 }
 
+.section-title {
+  font-size: 1.4rem;
+
+  border: 1px solid var(--color-brand-primary);
+  padding: var(--space-2) var(--space-3);
+
+  border-radius: 6px;
+  color: var(--color-brand-primary);
+}
+
+.section-title::before {
+  content: '// ';
+}
+
 /* Body Styling */
 body {
   font-family: 'Mona Sans', sans-serif;
@@ -105,7 +119,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: var(--space-3);
 }
 
@@ -129,6 +142,10 @@ body {
   .cta-icon:hover {
     background-color: var(--color-cta-bg-hover);
   }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
 }
 
 /* Desktop */
@@ -140,5 +157,9 @@ body {
 
   #main {
     padding: var(--space-8);
+  }
+
+  .section-title {
+    font-size: 1.6rem;
   }
 }

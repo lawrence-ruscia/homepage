@@ -1,0 +1,61 @@
+import { useBreakpoint } from '../utils/useBreakpoint';
+import styles from '../assets/styles/About.module.css';
+import illustration from '@/assets/images/illustration.svg';
+const text1 = (
+  <p className={styles.textContent}>
+    Hi! I’m a full-stack web developer based in the Philippines with a focus on
+    building scalable, user-centered applications using the PERN stack
+    (PostgreSQL, Express, React, Node.js).
+  </p>
+);
+
+const text2 = (
+  <p>
+    As an Information Technology student, I’ve developed a solid foundation in
+    both front-end and back-end development. I enjoy designing responsive and
+    accessible UIs with HTML, CSS, and React, and building robust APIs with
+    Node.js and Express.
+  </p>
+);
+
+const text3 = (
+  <p>
+    I care about writing clean, maintainable code and crafting meaningful user
+    experiences. I’m always learning, iterating, and looking for ways to
+    contribute to impactful projects.
+  </p>
+);
+
+const text4 = <p>Let’s build something great together.</p>;
+const largeScreenTexts = [text1, text2, text3, text4];
+const mobileScreenText = (
+  <p className={styles.mobileText}>
+    I’m a full-stack developer based in the Philippines, focused on building
+    responsive, accessible apps with the PERN stack. As an IT student, I enjoy
+    crafting user-friendly UIs with React and building solid backend APIs with
+    Node and Express. Always learning, always building.
+  </p>
+);
+
+export const About = () => {
+  const isMobile = useBreakpoint('(max-width: 768px)');
+
+  return (
+    <section id='about' className={styles.about}>
+      <h1 className={`${styles.title} section-title`}>About Me</h1>
+      <div className={styles.content}>
+        {isMobile ? (
+          mobileScreenText
+        ) : (
+          <div className={styles.textContent}>
+            {largeScreenTexts.map((text) => text)}
+          </div>
+        )}
+
+        <div className={styles.illustration} aria-hidden='true'>
+          <img src={illustration} loading='lazy' alt='' />
+        </div>
+      </div>
+    </section>
+  );
+};
