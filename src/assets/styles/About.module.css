@@ -6,13 +6,9 @@
   margin-block: clamp(6rem, 10vw, 8rem);
 }
 
-.mobileText {
-  text-align: center;
-}
-
 .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   max-width: 100%;
 }
@@ -22,8 +18,8 @@
 }
 
 .illustration {
-  max-width: 50%;
-  width: 750px;
+  width: 100%;
+  max-width: 500px;
 
   flex: 1;
   aspect-ratio: 4 / 3;
@@ -40,6 +36,10 @@
   .content {
     flex-direction: row-reverse;
     gap: var(--space-7);
+  }
+
+  .illustration {
+    max-width: 100%;
   }
 
   .textContent {

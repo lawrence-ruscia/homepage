@@ -9,9 +9,9 @@
   justify-content: center;
   align-items: center;
 
-  text-align: center;
-
   flex-direction: column;
+
+  flex: 1;
 }
 
 .headline,
@@ -21,8 +21,9 @@
 }
 
 .avatar {
-  max-width: 50%;
-  width: 750px;
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
 }
 
 img {
@@ -46,6 +47,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+    gap: var(--space-6);
   }
 
   .headline,
@@ -63,15 +66,17 @@ img {
   }
 
   .header {
-    max-width: 45%;
     align-items: start;
   }
 
   .avatar {
     display: block;
+    max-width: 100%;
   }
 
   .avatar > img {
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--color-brand-light);
     border-radius: 10px;
 
@@ -114,6 +119,10 @@ img {
 
 /* Desktop */
 @media (min-width: 1024px) {
+  .hero {
+    gap: var(--space-8);
+  }
+
   .description {
     padding-left: var(--space-5);
   }
