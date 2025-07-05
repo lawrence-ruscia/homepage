@@ -36,7 +36,7 @@ export const NavList = () => {
           type='button'
         >
           <FileDown className={styles.navIcon} />
-          Download Resume
+          Download CV
         </button>
       </li>
     </ul>
