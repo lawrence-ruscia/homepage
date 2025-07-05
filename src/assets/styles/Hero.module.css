@@ -1,13 +1,11 @@
 .hero {
   display: flex;
   flex-direction: column-reverse;
-  align-items: center;
 }
 
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
 
   flex-direction: column;
 
@@ -16,12 +14,21 @@
 
 .headline,
 .description {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
+  margin-top: 0.45rem;
+  margin-bottom: 0.45rem;
+}
+
+.headline {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(4rem, 8vw, 5rem);
 }
 
 .avatar {
   flex: 1;
+
+  align-self: center;
   max-width: 500px;
   width: 100%;
 }
@@ -31,14 +38,16 @@ img {
   height: auto;
 }
 
-.highlight {
+.role {
   color: var(--color-brand-primary);
+
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
 .viewWorkBtn {
-  max-width: 120px;
-  margin-top: var(--space-5);
+  margin-top: var(--space-6);
   text-decoration: none;
+  align-self: start;
 }
 
 /* Tablet */
@@ -59,10 +68,6 @@ img {
   .description {
     padding-left: var(--space-4);
     border-left: 3px solid var(--color-brand-primary);
-  }
-
-  .headline {
-    font-size: clamp(1.5rem, 5vw, 4.5rem);
   }
 
   .header {
@@ -128,7 +133,7 @@ img {
   }
 
   .header::before {
-    content: '// Hello, World!';
+    content: "// Hi, I'm";
     color: var(--color-brand-primary);
     opacity: 0.3;
     transition: opacity 200ms ease-in-out;

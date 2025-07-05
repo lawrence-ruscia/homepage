@@ -5,17 +5,14 @@ export const Hero = () => {
     <section className={styles.hero}>
       <header className={styles.header}>
         <h1 className={styles.headline}>
-          Hi, I'm Lawrence, a{' '}
-          <span className={styles.highlight}>Full-Stack </span>
-          Developer
+          Lawrence
+          <span className={styles.role}>Full-Stack Developer </span>
         </h1>
         <p className={styles.description}>
-          I build fast, accessible web apps using modern JavaScript technologies
-          like React, Node.js, and PostgreSQL. I care about clean code,
-          user-friendly design, and performance.
+          Building Full-Stack Web Apps with React, Node.js, Express & PostgreSQL
         </p>
         <a className={`${styles.viewWorkBtn} cta`} href='#'>
-          View My Work
+          See What I’ve Built
         </a>
       </header>
       <div className={styles.avatar} aria-hidden='true'>
