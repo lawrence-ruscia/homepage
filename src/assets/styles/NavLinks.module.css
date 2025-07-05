@@ -17,36 +17,6 @@
   transform: translateX(0);
 }
 
-.navList {
-  padding: 0;
-  margin: 0;
-
-  padding: 0 var(--space-2);
-  margin-top: var(--space-4);
-
-  list-style-type: none;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.navLink > a {
-  display: flex;
-  align-items: center;
-  gap: var(--space-4);
-
-  padding: var(--space-3);
-
-  text-decoration: none;
-  color: inherit;
-
-  width: 100%;
-}
-
-.navIcon {
-  width: 1.75rem;
-}
-
 .close {
   border: 0;
 

@@ -14,7 +14,7 @@ export const Hero = () => {
           like React, Node.js, and PostgreSQL. I care about clean code,
           user-friendly design, and performance.
         </p>
-        <a className={styles.cta} href='#'>
+        <a className={`${styles.viewWorkBtn} cta`} href='#'>
           View My Work
         </a>
       </header>

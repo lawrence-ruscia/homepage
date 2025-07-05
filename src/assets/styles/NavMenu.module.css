@@ -13,4 +13,8 @@
   .nav {
     padding: var(--space-2);
   }
+
+  .menuBtn {
+    display: none;
+  }
 }

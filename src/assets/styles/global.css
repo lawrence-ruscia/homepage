@@ -68,6 +68,27 @@ h2 {
   line-height: 1.4;
 }
 
+.cta,
+.cta-icon {
+  display: flex;
+  align-items: center;
+
+  padding: var(--space-3);
+  border-radius: 6px;
+
+  font-size: var(--font-size-0);
+
+  color: var(--color-cta);
+  background-color: var(--color-cta-bg);
+  border: 1px solid var(--color-cta-border);
+
+  transition: background-color 200ms ease-in-out;
+}
+
+.cta-icon {
+  gap: var(--space-2);
+}
+
 /* Body Styling */
 body {
   font-family: 'Mona Sans', sans-serif;
@@ -102,6 +123,11 @@ body {
 
   #main {
     padding: var(--space-5);
+  }
+
+  .cta:hover,
+  .cta-icon:hover {
+    background-color: var(--color-cta-bg-hover);
   }
 }
 

@@ -20,26 +20,6 @@
   margin-bottom: 0.75rem;
 }
 
-.cta {
-  max-width: 120px;
-
-  display: grid;
-  place-items: center;
-
-  padding: var(--space-3);
-  margin-top: var(--space-5);
-  border-radius: 6px;
-
-  font-size: var(--font-size-0);
-  text-decoration: none;
-
-  color: var(--color-cta);
-  background-color: var(--color-cta-bg);
-  border: 1px solid var(--color-cta-border);
-
-  transition: background-color 200ms ease-in-out;
-}
-
 .avatar {
   max-width: 50%;
   width: 750px;
@@ -52,6 +32,12 @@ img {
 
 .highlight {
   color: var(--color-brand-primary);
+}
+
+.viewWorkBtn {
+  max-width: 120px;
+  margin-top: var(--space-5);
+  text-decoration: none;
 }
 
 /* Tablet */
@@ -79,10 +65,6 @@ img {
   .header {
     max-width: 45%;
     align-items: start;
-  }
-
-  .cta:hover {
-    background-color: var(--color-cta-bg-hover);
   }
 
   .avatar {
