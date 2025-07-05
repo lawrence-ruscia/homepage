@@ -33,6 +33,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transition: transform 250ms ease-in-out;
 }
 
 @media (min-width: 768px) {
@@ -43,6 +44,10 @@
 
   .textContent {
     flex: 1;
+  }
+
+  .illustration:hover > img {
+    transform: translateY(-10px);
   }
 }
 
