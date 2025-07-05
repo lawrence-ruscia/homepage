@@ -49,6 +49,7 @@
   }
 
   .navLink:has(> a):hover {
+    color: var(--color-brand-primary);
     border-bottom: 1px solid var(--color-brand-primary);
   }
 }
