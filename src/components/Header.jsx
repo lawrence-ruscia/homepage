@@ -1,13 +1,15 @@
 import { Logo } from './Logo';
-import { HeaderNav } from './HeaderNav';
-import { useState } from 'react';
+import { NavMenu } from './NavMenu';
+import { useBreakpoint } from '../utils/useBreakpoint';
 import styles from '../assets/styles/Header.module.css';
 
 export const Header = () => {
+  const isMobile = useBreakpoint('(min-width: 768px)');
+
   return (
     <header className={styles.header}>
       <Logo className={styles.logo} iconStyles={styles.icon} />
-      <HeaderNav isMobile='true' className={styles.nav} />
+      <NavMenu className={styles.nav} />
     </header>
   );
 };

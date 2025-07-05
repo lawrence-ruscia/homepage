@@ -24,22 +24,6 @@
   animation: blink 650ms alternate infinite;
 }
 
-/* Nav Menu */
-.nav {
-  outline: none;
-  border: 0;
-  padding: var(--space-3);
-  background-color: transparent;
-}
-
-.nav > * {
-  color: var(--color-brand-primary);
-}
-
-.nav-link > a {
-  color: inherit;
-}
-
 @keyframes blink {
   from {
     opacity: 0;
@@ -53,10 +37,6 @@
 @media (min-width: 768px) {
   .logo {
     font-size: 1.5rem;
-  }
-
-  .nav {
-    padding: var(--space-2);
   }
 
   .header {

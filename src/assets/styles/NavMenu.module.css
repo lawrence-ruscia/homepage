@@ -1,0 +1,16 @@
+.menuBtn {
+  outline: none;
+  border: 0;
+  padding: var(--space-3);
+  background-color: transparent;
+}
+
+.menuBtn > * {
+  color: var(--color-brand-primary);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    padding: var(--space-2);
+  }
+}

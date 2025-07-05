@@ -1,7 +1,8 @@
 import { Menu } from 'lucide-react';
 import { NavLinks } from './NavLinks';
 import { useState } from 'react';
-export const HeaderNav = ({ className }) => {
+import styles from '../assets/styles/NavMenu.module.css';
+export const NavMenu = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => setMenuOpen((prev) => !prev);
@@ -11,7 +12,11 @@ export const HeaderNav = ({ className }) => {
   };
   return (
     <>
-      <button id='navMenuBtn' onClick={handleMenuToggle} className={className}>
+      <button
+        id='navMenuBtn'
+        onClick={handleMenuToggle}
+        className={styles.menuBtn}
+      >
         <Menu width='1.75rem' height='auto' />
       </button>
       <NavLinks menuOpen={menuOpen} handleMenuClose={handleMenuClose} />
