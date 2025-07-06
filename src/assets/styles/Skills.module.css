@@ -3,6 +3,8 @@
   flex-direction: column;
 
   background-color: var(--color-surface);
+
+  margin-block: var(--space-section);
 }
 
 .skills > h2 {

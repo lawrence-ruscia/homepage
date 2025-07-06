@@ -39,6 +39,7 @@ button,
 
   /* Backgrounds */
   --color-bg-primary: hsl(180, 4%, 5%);
+  --color-bg-variant: hsl(143, 21%, 7%);
 
   /* Spacing */
   --space-0: 0rem;
@@ -50,7 +51,7 @@ button,
   --space-6: 2rem;
   --space-7: 2.5rem;
   --space-8: 3rem;
-  --space-section: clamp(6rem, 10vw, 8rem);
+  --space-section: 2rem;
 
   /* Font Size */
   --font-size-0: 1rem;
@@ -62,6 +63,7 @@ button,
   --color-cta-border: hsla(142, 71%, 45%, 0.268);
   --color-cta-bg: hsla(142, 71%, 45%, 0.15);
   --color-cta-bg-hover: hsla(142, 71%, 45%, 0.25);
+  --color-secondary-bg-hover: hsla(0, 0%, 100%, 0.1);
 }
 
 /* Global Element Styling */
@@ -98,6 +100,22 @@ h2 {
 
 .cta-icon {
   gap: var(--space-2);
+}
+
+.secondaryBtn {
+  display: flex;
+  align-items: center;
+
+  padding: var(--space-3);
+  border-radius: 6px;
+
+  font-size: var(--font-size-0);
+
+  color: var(--color-text-muted);
+  background-color: inherit;
+  border: 1px solid var(--color-text-muted);
+
+  transition: background-color 200ms ease-in-out;
 }
 
 .section-title {
@@ -155,6 +173,10 @@ body {
   .cta:hover,
   .cta-icon:hover {
     background-color: var(--color-cta-bg-hover);
+  }
+
+  .secondaryBtn:hover {
+    background-color: var(--color-secondary-bg-hover);
   }
 }
 
