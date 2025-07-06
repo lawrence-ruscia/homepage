@@ -54,7 +54,7 @@ img {
 @media (min-width: 768px) {
   .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
 
     gap: var(--space-6);
@@ -73,10 +73,11 @@ img {
   .header {
     align-items: start;
     gap: var(--space-1);
+    max-width: 50%;
   }
 
   .avatar {
-    max-width: 100%;
+    max-width: 40%;
   }
 
   .avatar > img {
