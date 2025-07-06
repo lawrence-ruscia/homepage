@@ -24,6 +24,12 @@ button,
   --color-brand-light: hsla(142, 71%, 45%, 0.4);
   --color-brand-separator: hsla(142, 71%, 45%, 0.142);
 
+  /* Surface */
+  --color-surface: hsl(214, 25%, 13%);
+  --color-surface-light: hsl(214, 25%, 16%);
+  --color-onSurface: hsl(142, 69%, 58%);
+  --color-surface-border: hsla(219, 24%, 40%, 0.7);
+
   /* Text */
   --color-text-primary: hsl(0 0% 95%);
   --color-text-muted: hsl(0 0% 70%);
@@ -39,6 +45,7 @@ button,
   --space-4: 1rem;
   --space-5: 1.5rem;
   --space-6: 2rem;
+  --space-7: 2.5rem;
   --space-8: 3rem;
   --space-section: clamp(6rem, 10vw, 8rem);
 
