@@ -1,6 +1,8 @@
 .hero {
   display: flex;
   flex-direction: column-reverse;
+
+  margin-block: var(--space-section);
 }
 
 .header {

@@ -149,8 +149,9 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  padding-inline: clamp(1rem, 5vw, 4rem);
+  padding-inline: clamp(1rem, 5vw, 6rem);
   margin-inline: auto;
+  max-width: 80ch;
 }
 
 /* Tablet */
