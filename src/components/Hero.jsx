@@ -11,7 +11,7 @@ export const Hero = () => {
         <p className={styles.description}>
           Building Full-Stack Web Apps with React, Node.js, Express & PostgreSQL
         </p>
-        <a className={`${styles.viewWorkBtn} cta`} href='#'>
+        <a className={`${styles.viewWorkBtn} cta`} href='#projects'>
           See What I’ve Built
         </a>
       </header>
