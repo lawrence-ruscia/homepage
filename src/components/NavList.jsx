@@ -1,31 +1,31 @@
 import styles from '../assets/styles/NavList.module.css';
 import { useBreakpoint } from '../utils/useBreakpoint';
 import { FolderCode, User, Wrench, Mail, FileDown } from 'lucide-react';
-export const NavList = () => {
+export const NavList = ({ handleMenuClose }) => {
   const isMobile = useBreakpoint('(max-width: 768px)');
 
   return (
     <ul className={styles.navList}>
       <li className={styles.navLink}>
-        <a href='#about'>
+        <a href='#about' onClick={handleMenuClose}>
           <User className={styles.navIcon} />
           About
         </a>
       </li>
       <li className={styles.navLink}>
-        <a href='#skills'>
+        <a href='#skills' onClick={handleMenuClose}>
           <Wrench className={styles.navIcon} />
           Skills
         </a>
       </li>
       <li className={styles.navLink}>
-        <a href='#projects'>
+        <a href='#projects' onClick={handleMenuClose}>
           <FolderCode className={styles.navIcon} />
           Projects
         </a>
       </li>
       <li className={styles.navLink}>
-        <a href='#contact'>
+        <a href='#contact' onClick={handleMenuClose}>
           <Mail className={styles.navIcon} />
           Contact
         </a>

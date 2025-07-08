@@ -15,7 +15,7 @@ export const NavLinks = ({ menuOpen, handleMenuClose }) => {
         >
           <X width='1.75rem' height='auto' className={styles.closeIcon} />
         </button>
-        <NavList />
+        <NavList handleMenuClose={handleMenuClose} />
       </nav>
 
       <div
