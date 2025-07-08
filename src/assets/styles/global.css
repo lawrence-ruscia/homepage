@@ -133,6 +133,10 @@ h2 {
 }
 
 /* Body Styling */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
 body {
   font-family: 'Mona Sans', sans-serif;
   background-color: var(--color-bg-primary);

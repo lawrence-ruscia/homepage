@@ -1,8 +1,14 @@
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
 
+  height: 72px;
+
   padding: var(--space-3);
+  background-color: var(--color-bg-primary);
 
   border-bottom: 1px solid var(--color-brand-separator);
 }
@@ -38,14 +44,7 @@
   .logo {
     font-size: 1.5rem;
   }
-
-  .header {
-    padding: var(--space-5);
-  }
 }
 
-@media (min-width: 1024) {
-  .header {
-    padding: var(--space-8);
-  }
+@media (min-width: 1024) {  
 }
