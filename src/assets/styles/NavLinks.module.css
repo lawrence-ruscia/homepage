@@ -7,7 +7,7 @@
   transform: translateX(9999px);
   transition: transform 250ms ease-in-out;
 
-  width: 320px;
+  width: clamp(16rem, 80vw, 20rem);
   min-height: 100vh;
 
   background-color: var(--color-bg-primary);
