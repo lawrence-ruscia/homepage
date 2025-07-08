@@ -183,8 +183,4 @@ body {
 
 /* Desktop */
 @media (min-width: 1024px) {
-  body {
-    font-size: 1.25rem;
-    line-height: 1.5;
-  }
 }
