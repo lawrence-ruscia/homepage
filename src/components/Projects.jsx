@@ -1,8 +1,12 @@
 import styles from '../assets/styles/Projects.module.css';
 import ecommerce from '../assets/images/preview-e-commerce.png';
 import dataVisualization from '../assets/images/preview-data-visualization.png';
-import { CodeXml, ExternalLink } from 'lucide-react';
+import { useBreakpoint } from '../utils/useBreakpoint';
+import { ExternalLink } from 'lucide-react';
+import { Github } from './Github.jsx';
+
 export const Projects = () => {
+  const isMobile = useBreakpoint('(max-width: 768px)');
   return (
     <section id='projects' className={styles.projects}>
       <h2 className='section-title'>Projects</h2>
@@ -45,13 +49,33 @@ export const Projects = () => {
             <img src={ecommerce} alt='' />
 
             <div className={styles.links}>
-              <a href='#preview' className='cta'>
-                <ExternalLink />
-                Live Demo
+              <a
+                href='#preview'
+                className='cta'
+                aria-label='View live demo'
+                title='View live demo'
+              >
+                {isMobile ? (
+                  <ExternalLink />
+                ) : (
+                  <>
+                    <ExternalLink /> Live Demo
+                  </>
+                )}
               </a>
-              <a href='#preview' className='secondaryBtn'>
-                <CodeXml />
-                View Code
+              <a
+                href='#preview'
+                className='secondaryBtn'
+                aria-label='View code on GitHub'
+                title='View code on GitHub'
+              >
+                {isMobile ? (
+                  <Github color='var(--color-text-muted)' />
+                ) : (
+                  <>
+                    <Github color='var(--color-text-muted)' /> View Code
+                  </>
+                )}
               </a>
             </div>
           </div>
@@ -93,13 +117,33 @@ export const Projects = () => {
           <div className={styles.preview}>
             <img src={dataVisualization} alt='' />
             <div className={styles.links}>
-              <a href='#preview' className='cta'>
-                <ExternalLink />
-                Live Demo
+              <a
+                href='#preview'
+                className='cta'
+                aria-label='View live demo'
+                title='View live demo'
+              >
+                {isMobile ? (
+                  <ExternalLink />
+                ) : (
+                  <>
+                    <ExternalLink /> Live Demo
+                  </>
+                )}
               </a>
-              <a href='#preview' className='secondaryBtn'>
-                <CodeXml />
-                View Code
+              <a
+                href='#preview'
+                className='secondaryBtn'
+                aria-label='View code on GitHub'
+                title='View code on GitHub'
+              >
+                {isMobile ? (
+                  <Github color='var(--color-text-muted)' />
+                ) : (
+                  <>
+                    <Github color='var(--color-text-muted)' /> View Code
+                  </>
+                )}
               </a>
             </div>
           </div>

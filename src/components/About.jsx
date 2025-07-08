@@ -29,7 +29,7 @@ const text3 = (
 const text4 = <p>Let’s build something great together.</p>;
 const largeScreenTexts = [text1, text2, text3, text4];
 const mobileScreenText = (
-  <p className={styles.mobileText}>
+  <p>
     I’m a full-stack developer based in the Philippines, focused on building
     responsive, accessible apps with the PERN stack. As an IT student, I enjoy
     crafting user-friendly UIs with React and building solid backend APIs with
@@ -44,13 +44,7 @@ export const About = () => {
     <section id='about' className={styles.about}>
       <h2 className={`${styles.title} section-title`}>About Me</h2>
       <div className={styles.content}>
-        {isMobile ? (
-          mobileScreenText
-        ) : (
-          <div className={styles.textContent}>
-            {largeScreenTexts.map((text) => text)}
-          </div>
-        )}
+        <div className={styles.textContent}>{mobileScreenText}</div>
 
         <div className={styles.illustration} aria-hidden='true'>
           <img src={illustration} loading='lazy' alt='' />

@@ -35,7 +35,7 @@ button,
 
   /* Text */
   --color-text-primary: hsl(0 0% 95%);
-  --color-text-muted: hsl(0 0% 70%);
+  --color-text-muted: hsl(0, 0%, 70%);
 
   /* Backgrounds */
   --color-bg-primary: hsl(180, 4%, 5%);
@@ -156,7 +156,7 @@ body {
 
   padding-inline: clamp(1rem, 5vw, 6rem);
   margin-inline: auto;
-  max-width: 80ch;
+  max-width: 80%;
 }
 
 /* Tablet */

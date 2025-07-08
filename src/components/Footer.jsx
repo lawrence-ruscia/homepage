@@ -27,18 +27,33 @@ export const Footer = () => {
 
         <a href='#' className='secondaryBtn'>
           <Download />
-          Download Resume
+          Download CV
         </a>
       </div>
 
       <ul className={styles.socials}>
-        <a href='https://github.com/lawrence-ruscia' target='_blank'>
+        <a
+          href='https://github.com/lawrence-ruscia'
+          target='_blank'
+          aria-label='View Github profile'
+          title='View Github profile'
+        >
           <Github className={styles.icon} />
         </a>
-        <a href='#'>
+        <a
+          href='#'
+          target='_blank'
+          aria-label='View Linkedin profile'
+          title='View Linkedin profile'
+        >
           <Linkedin className={styles.icon} />
         </a>
-        <a href='#'>
+        <a
+          href='#'
+          target='_blank'
+          aria-label='View X profile'
+          title='View X profile'
+        >
           <X className={styles.icon} />
         </a>
       </ul>
