@@ -9,7 +9,7 @@ export const Skills = () => {
       <div className={styles.content}>
         <div className={styles.grid}>
           <h3 className={styles.heading}>
-            <Monitor />
+            <Monitor className={styles.icon} />
             Frontend Development
           </h3>
           <ul className={styles.skillList}>
@@ -22,7 +22,7 @@ export const Skills = () => {
 
         <div className={styles.grid}>
           <h3 className={styles.heading}>
-            <Server />
+            <Server className={styles.icon} />
             Backend Development
           </h3>
           <ul className={styles.skillList}>
@@ -34,7 +34,7 @@ export const Skills = () => {
 
         <div className={styles.grid}>
           <h3 className={styles.heading}>
-            <Hammer />
+            <Hammer className={styles.icon} />
             Tools & Version Control
           </h3>
           <ul className={styles.skillList}>
