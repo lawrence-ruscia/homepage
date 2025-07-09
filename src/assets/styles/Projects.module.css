@@ -73,8 +73,12 @@ li {
   grid-area: features;
 }
 
+.content {
+  flex: 1;
+}
+
 .preview {
-  flex: 1 1 auto;
+  flex: 1;
   overflow: hidden;
 }
 
@@ -113,13 +117,9 @@ li {
 @media (min-width: 1024px) {
   .projectItem {
     flex-direction: row;
-    align-items: center;
+
     gap: var(--space-6);
     padding: var(--space-7);
-  }
-
-  .preview {
-    max-width: 50%;
   }
 
   .preview img {

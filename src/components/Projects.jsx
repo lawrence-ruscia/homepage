@@ -1,9 +1,17 @@
 import styles from '../assets/styles/Projects.module.css';
-import ecommerce from '../assets/images/preview-e-commerce.png';
-import dataVisualization from '../assets/images/preview-data-visualization.png';
+import ecommerce_400 from '../assets/images/e-commerce-400.jpg';
+import ecommerce_800 from '../assets/images/e-commerce-800.jpg';
+import ecommerce_1200 from '../assets/images/e-commerce-1200.jpg';
+import ecommerce_1600 from '../assets/images/e-commerce-1600.jpg';
+import data_visualization_400 from '../assets/images/data-visualization-400.jpg';
+import data_visualization_800 from '../assets/images/data-visualization-800.jpg';
+import data_visualization_1200 from '../assets/images/data-visualization-1200.jpg';
+import data_visualization_1600 from '../assets/images/data-visualization-1600.jpg';
+
 import { useBreakpoint } from '../utils/useBreakpoint';
 import { ExternalLink } from 'lucide-react';
 import { Github } from './Github.jsx';
+import { ResponsiveImage } from './ResponsiveImage.jsx';
 
 export const Projects = () => {
   const isMobile = useBreakpoint('(max-width: 768px)');
@@ -46,7 +54,16 @@ export const Projects = () => {
             </div>
           </div>
           <div className={styles.preview}>
-            <img src={ecommerce} alt='' />
+            <ResponsiveImage
+              src={ecommerce_1600}
+              srcSet={`
+                ${ecommerce_400} 400w,
+                ${ecommerce_800} 800w,
+                ${ecommerce_1200} 1200w,
+                ${ecommerce_1600} 1600w
+              `}
+              sizes='(min-width: 1024px) 50vw, 100vw'
+            />
 
             <div className={styles.links}>
               <a
@@ -115,7 +132,16 @@ export const Projects = () => {
             </div>
           </div>
           <div className={styles.preview}>
-            <img src={dataVisualization} alt='' />
+            <ResponsiveImage
+              src={data_visualization_1600}
+              srcSet={`
+                ${data_visualization_400} 400w,
+                ${data_visualization_800} 800w,
+                ${data_visualization_1200} 1200w,
+                ${data_visualization_1600} 1600w
+              `}
+              sizes='(min-width: 1024px) 50vw, 100vw'
+            />
             <div className={styles.links}>
               <a
                 href='#preview'
